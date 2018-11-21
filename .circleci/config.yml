@@ -7,7 +7,14 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: apt-get update -yqq && apt-get install -y git
+          command: apt-get update -yqq && apt-get install -y cmake git g++ python
       - run:
           name: Clone Vulkan CTS
           command: git clone https://github.com/KhronosGroup/VK-GL-CTS
+      - run:
+          name: Build Vulkan CTS
+          command: |
+            mkdir -p VK-GL-CTS/build
+            cd VK-GL-CTS/build
+            python ../external/fetch_sources.py
+            cmake .. && make
