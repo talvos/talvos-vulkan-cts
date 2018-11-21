@@ -8,13 +8,22 @@ jobs:
       - run:
           name: Install dependencies
           command: apt-get update -yqq && apt-get install -y cmake git g++ python
-      - run:
-          name: Clone Vulkan CTS
-          command: git clone https://github.com/KhronosGroup/VK-GL-CTS
+
+      - restore_cache:
+          key: deqp-vk-ff7282e
       - run:
           name: Build Vulkan CTS
           command: |
+            if [ -x VK-GL-CTS/deqp-vk ]; then exit 0; fi
+            rm -rf VK-GL-CTS
+            git clone https://github.com/KhronosGroup/VK-GL-CTS
             mkdir -p VK-GL-CTS/build
             cd VK-GL-CTS/build
+            git checkout ff7282e
             python ../external/fetch_sources.py
-            cmake .. && make
+            cmake .. && make -j 4
+            cp external/vulkancts/modules/vulkan/deqp-vk ..
+      - save_cache:
+          key: deqp-vk-ff7282e
+          paths:
+            - VK-GL-CTS/deqp-vk
