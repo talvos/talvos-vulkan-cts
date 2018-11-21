@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: apt-get update -yqq && apt-get install -y git
+      - run:
+          name: Clone Vulkan CTS
+          command: git clone https://github.com/KhronosGroup/VK-GL-CTS
