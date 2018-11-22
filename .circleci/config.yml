@@ -1,26 +1,31 @@
+base-image: &base-image
+  docker:
+    - image: buildpack-deps:bionic
+
+aliases:
+  - &install-base-deps
+    run:
+      name: Install base dependencies
+      command: |
+        apt-get update -yqq
+        apt-get install -y cmake libgl1-mesa-dev mesa-common-dev ninja-build unzip
+
 version: 2
 jobs:
   build:
-    docker:
-      - image: buildpack-deps:trusty
+    <<: *base-image
     steps:
       - checkout
+      - *install-base-deps
       - run:
-          name: Install dependencies
+          name: Install SPIR-V dependencies
           command: |
-            apt-get update -yqq
-            apt-get install -y cmake git python software-properties-common unzip wget
-            add-apt-repository -y ppa:ubuntu-toolchain-r/test
-            apt-get update -yqq
-            apt-get install -y g++-7
-            wget https://cmake.org/files/v3.13/cmake-3.13.0-Linux-x86_64.tar.gz
-            tar xf cmake-3.13.0-Linux-x86_64.tar.gz
             git clone https://github.com/KhronosGroup/SPIRV-Headers
             wget -q https://github.com/KhronosGroup/SPIRV-Tools/releases/download/master-tot/SPIRV-Tools-master-linux-RelWithDebInfo.zip
             unzip SPIRV-Tools-master-linux-RelWithDebInfo.zip -d SPIRV-Tools
 
       - restore_cache:
-          key: deqp-vk-ff7282e
+          key: deqp-vk-ff7282e-v1
       - run:
           name: Build Vulkan CTS
           command: |
@@ -31,11 +36,13 @@ jobs:
             cd VK-GL-CTS/build
             git checkout ff7282e
             python ../external/fetch_sources.py
+            sed -i 's/libvulkan.so.1/libtalvos-vulkan.so/' \
+              ../framework/platform/lnx/tcuLnxVulkanPlatform.cpp
             cmake ..
             make -j 4
             cp external/vulkancts/modules/vulkan/deqp-vk ..
       - save_cache:
-          key: deqp-vk-ff7282e
+          key: deqp-vk-ff7282e-v1
           paths:
             - VK-GL-CTS/deqp-vk
 
@@ -45,7 +52,7 @@ jobs:
             git clone https://github.com/talvos/talvos talvos-src
             mkdir -p talvos-src/build
             cd talvos-src/build
-            ../../cmake-3.13.0-Linux-x86_64/bin/cmake .. \
+            cmake .. \
               -DCMAKE_BUILD_TYPE=Debug \
               -DCMAKE_INSTALL_PREFIX=$PWD/../../talvos \
               -DCMAKE_C_COMPILER=gcc-7 \
@@ -54,3 +61,35 @@ jobs:
               -DSPIRV_TOOLS_INCLUDE_DIR=$PWD/../../SPIRV-Tools/include/ \
               -DSPIRV_TOOLS_LIBRARY_DIR=$PWD/../../SPIRV-Tools/lib/
             make && make test && make install
+
+      - persist_to_workspace:
+          root: .
+          paths:
+            - talvos
+            - VK-GL-CTS
+
+  test:
+    <<: *base-image
+    steps:
+      - checkout
+      - *install-base-deps
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run tests
+          command: |
+            ls
+            export TALVOS_MAX_ERRORS=1
+            export LD_LIBRARY_PATH=$PWD/talvos/lib/:$LD_LIBRARY_PATH
+            mkdir test-dir
+            cd test-dir
+            ../VK-GL-CTS/deqp-vk --deqp-caselist=dEQP-VK.info.device
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
