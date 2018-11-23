@@ -26,7 +26,7 @@ jobs:
             unzip SPIRV-Tools-master-linux-RelWithDebInfo.zip -d SPIRV-Tools
 
       - restore_cache:
-          key: deqp-vk-ff7282e-v1
+          key: deqp-vk-ff7282e-v3
       - run:
           name: Build Vulkan CTS
           command: |
@@ -42,10 +42,12 @@ jobs:
             cmake ..
             make -j 4
             cp external/vulkancts/modules/vulkan/deqp-vk ..
+            mv external/vulkancts/modules/vulkan/vulkan ..
       - save_cache:
-          key: deqp-vk-ff7282e-v1
+          key: deqp-vk-ff7282e-v3
           paths:
             - VK-GL-CTS/deqp-vk
+            - VK-GL-CTS/vulkan
 
       - run:
           name: Build Talvos
@@ -72,7 +74,7 @@ jobs:
   test:
     executor: base-image
     parameters:
-      filename:
+      group:
         type: string
     steps:
       - run: echo
@@ -82,13 +84,16 @@ jobs:
           at: .
       - run:
           name: Run tests
+          no_output_timeout: 2h
           command: |
-            ls -a
             export TALVOS_MAX_ERRORS=1
             export LD_LIBRARY_PATH=$PWD/talvos/lib/:$LD_LIBRARY_PATH
+            export PATH=$PWD/VK-GL-CTS:$PATH
             mkdir test-dir
             cd test-dir
-            ../VK-GL-CTS/deqp-vk --deqp-caselist-file=../casefiles/<< parameters.filename >>
+            ln -s ../VK-GL-CTS/vulkan
+            grep "dEQP-VK\.<< parameters.group >>\." ../vk-default.txt | grep -vxFf ../results/SLOW >TESTS
+            python ../classify.py TESTS
 
 workflows:
   version: 2.1
@@ -96,10 +101,126 @@ workflows:
     jobs:
       - build
       - test:
-          filename: FOO
+          group: info
           requires:
             - build
       - test:
-          filename: BAR
+          group: api
+          requires:
+            - build
+      - test:
+          group: memory
+          requires:
+            - build
+      - test:
+          group: pipeline
+          requires:
+            - build
+      - test:
+          group: binding_model
+          requires:
+            - build
+      - test:
+          group: spirv_assembly
+          requires:
+            - build
+      - test:
+          group: glsl
+          requires:
+            - build
+      - test:
+          group: renderpass
+          requires:
+            - build
+      - test:
+          group: renderpass2
+          requires:
+            - build
+      - test:
+          group: ubo
+          requires:
+            - build
+      - test:
+          group: dynamic_state
+          requires:
+            - build
+      - test:
+          group: ssbo
+          requires:
+            - build
+      - test:
+          group: query_pool
+          requires:
+            - build
+      - test:
+          group: draw
+          requires:
+            - build
+      - test:
+          group: compute
+          requires:
+            - build
+      - test:
+          group: image
+          requires:
+            - build
+      - test:
+          group: wsi
+          requires:
+            - build
+      - test:
+          group: synchronization
+          requires:
+            - build
+      - test:
+          group: sparse_resources
+          requires:
+            - build
+      - test:
+          group: tessellation
+          requires:
+            - build
+      - test:
+          group: rasterization
+          requires:
+            - build
+      - test:
+          group: clipping
+          requires:
+            - build
+      - test:
+          group: fragment_operations
+          requires:
+            - build
+      - test:
+          group: texture
+          requires:
+            - build
+      - test:
+          group: geometry
+          requires:
+            - build
+      - test:
+          group: robustness
+          requires:
+            - build
+      - test:
+          group: multiview
+          requires:
+            - build
+      - test:
+          group: subgroups
+          requires:
+            - build
+      - test:
+          group: ycbcr
+          requires:
+            - build
+      - test:
+          group: protected_memory
+          requires:
+            - build
+      - test:
+          group: device_group
           requires:
             - build
