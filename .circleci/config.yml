@@ -10,7 +10,7 @@ aliases:
         apt-get update -yqq
         apt-get install -y cmake libgl1-mesa-dev mesa-common-dev ninja-build unzip
 
-version: 2
+version: 2.1
 jobs:
   build:
     <<: *base-image
@@ -70,7 +70,11 @@ jobs:
 
   test:
     <<: *base-image
+    parameters:
+      filename:
+        type: string
     steps:
+      - run: echo
       - checkout
       - *install-base-deps
       - attach_workspace:
@@ -78,18 +82,23 @@ jobs:
       - run:
           name: Run tests
           command: |
-            ls
+            ls -a
             export TALVOS_MAX_ERRORS=1
             export LD_LIBRARY_PATH=$PWD/talvos/lib/:$LD_LIBRARY_PATH
             mkdir test-dir
             cd test-dir
-            ../VK-GL-CTS/deqp-vk --deqp-caselist=dEQP-VK.info.device
+            ../VK-GL-CTS/deqp-vk --deqp-caselist-file=../casefiles/<< parameters.filename >>
 
 workflows:
-  version: 2
+  version: 2.1
   build-and-test:
     jobs:
       - build
       - test:
+          filename: FOO
+          requires:
+            - build
+      - test:
+          filename: BAR
           requires:
             - build
