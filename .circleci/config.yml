@@ -1,6 +1,7 @@
-base-image: &base-image
-  docker:
-    - image: buildpack-deps:bionic
+executors:
+  base-image:
+    docker:
+      - image: buildpack-deps:bionic
 
 aliases:
   - &install-base-deps
@@ -13,7 +14,7 @@ aliases:
 version: 2.1
 jobs:
   build:
-    <<: *base-image
+    executor: base-image
     steps:
       - checkout
       - *install-base-deps
@@ -69,7 +70,7 @@ jobs:
             - VK-GL-CTS
 
   test:
-    <<: *base-image
+    executor: base-image
     parameters:
       filename:
         type: string
