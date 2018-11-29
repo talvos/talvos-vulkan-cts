@@ -1,14 +1,14 @@
-import os
+import subprocess
 import sys
 
-PASS  = open('PASS', 'w')
-FAIL  = open('FAIL', 'w')
-NOSUPPORT  = open('NOSUPPORT', 'w')
-WARN  = open('WARN', 'w')
-CRASH  = open('CRASH', 'w')
+PASS = open('PASS', 'w')
+FAIL = open('FAIL', 'w')
+NOSUPPORT = open('NOSUPPORT', 'w')
+WARN = open('WARN', 'w')
+CRASH = open('CRASH', 'w')
 
 if len(sys.argv) < 2 or len(sys.argv) > 3:
-    print 'Usage: python classify.py CASEFILE [deqp-vk]'
+    print('Usage: python classify.py CASEFILE [deqp-vk]')
     exit(1)
 
 CASEFILE = sys.argv[1]
@@ -25,6 +25,10 @@ crashed = 0
 warned = 0
 nosupport = 0
 total = len(CASES)
+if total == 0:
+    print('Test file is empty.')
+    exit(1)
+print('Running %d tests' % total)
 
 passes = []
 
@@ -35,14 +39,23 @@ while n < total:
         for line in CASES[n:n+1000]:
             TMP.write(line)
 
-    ret = os.system('/bin/bash -c ' + \
-                    '"(' + DEQP + ' --deqp-caselist-file=$PWD/TMP --deqp-crashhandler=enable || false) >OUTPUT 2>ERROR"')
+    # Run the tests
+    OUTPUT = open('OUTPUT', 'w')
+    ERROR = open('ERROR', 'w')
+    subprocess.call(
+        [DEQP, '--deqp-caselist-file=TMP', '--deqp-crashhandler=enable'],
+        stdout=OUTPUT, stderr=ERROR)
 
+    # Loop over test results
     RESULTS = open('TestResults.qpa', 'r').read()
     pos = 0
     while True:
+        # Find start of next test result
         tstart = RESULTS.find('<TestCaseResult', pos)
         if tstart < 0:
+            if n == 0:
+                print('Fatal crash before any tests have run (see ERROR).')
+                exit(1)
             break
 
         nstart = RESULTS.find('CasePath="', tstart)
@@ -52,17 +65,18 @@ while n < total:
 
         n += 1
 
+        # Get status code if present (otherwise assume test crashed)
         rstart = RESULTS.find('<Result StatusCode="', nend)
         if rstart < 0:
             CRASH.write(name + '\n')
             CRASH.flush()
             crashed += 1
             break
-
         rstart += 20
         rend = RESULTS.find('">', rstart)
         status = RESULTS[rstart:rend]
 
+        # Add test to appropriate group
         if status == 'Pass':
             PASS.write(name + '\n')
             PASS.flush()
@@ -80,11 +94,11 @@ while n < total:
             WARN.flush()
             warned += 1
         else:
-            print status + ': ' + name
+            print(status + ': ' + name)
 
         pos = rend
 
-        # Find slow
+        # Get test runtime
         tstart = RESULTS.find('Test case duration in microseconds', nend)
         tstart = RESULTS.find('"us">', tstart)
         tstart += 5
@@ -93,16 +107,22 @@ while n < total:
         if status == 'Pass':
             passes.append((name,runtime))
 
-    print "%d / %d -- %.2f%%" % (passed, n, 100.0*passed/float(n))
+    print('%d / %d -- %.2f%%' % (passed, n, 100.0*passed/float(n)))
 
-print
-print '%10s: %6d / %d  -- %6.2f%%' % ('PASS', passed, total, 100.0*passed/float(total))
-print '%10s: %6d / %d  -- %6.2f%%' % ('FAIL', failed, total, 100.0*failed/float(total))
-print '%10s: %6d / %d  -- %6.2f%%' % ('CRASH', crashed, total, 100.0*crashed/float(total))
-print '%10s: %6d / %d  -- %6.2f%%' % ('WARN', warned, total, 100.0*warned/float(total))
-print '%10s: %6d / %d  -- %6.2f%%' % ('NOSUPPORT', nosupport, total, 100.0*nosupport/float(total))
-print
+print()
+print('%10s: %6d / %d  -- %6.2f%%' % \
+    ('PASS', passed, total,100.0*passed/float(total)))
+print('%10s: %6d / %d  -- %6.2f%%' % \
+    ('FAIL', failed, total,100.0*failed/float(total)))
+print('%10s: %6d / %d  -- %6.2f%%' % \
+    ('CRASH', crashed, total,100.0*crashed/float(total)))
+print('%10s: %6d / %d  -- %6.2f%%' % \
+    ('WARN', warned, total,100.0*warned/float(total)))
+print('%10s: %6d / %d  -- %6.2f%%' % \
+    ('NOSUPPORT', nosupport, total,100.0*nosupport/float(total)))
+print()
 
+# Dump runtimes for tests that passed
 RUNTIMES = open('RUNTIMES', 'w')
 for p in passes:
-    print >>RUNTIMES, '%.3f %s' % (p[1], p[0])
+    RUNTIMES.write('%.3f %s\n' % (p[1], p[0]))
