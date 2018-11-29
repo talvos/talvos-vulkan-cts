@@ -5,6 +5,7 @@ PASS = open('PASS', 'w')
 FAIL = open('FAIL', 'w')
 NOSUPPORT = open('NOSUPPORT', 'w')
 WARN = open('WARN', 'w')
+TIMEOUT = open('TIMEOUT', 'w')
 CRASH = open('CRASH', 'w')
 
 if len(sys.argv) < 2 or len(sys.argv) > 3:
@@ -22,6 +23,7 @@ n = 0
 passed = 0
 failed = 0
 crashed = 0
+timedout = 0
 warned = 0
 nosupport = 0
 total = len(CASES)
@@ -43,7 +45,10 @@ while n < total:
     OUTPUT = open('OUTPUT', 'w')
     ERROR = open('ERROR', 'w')
     subprocess.call(
-        [DEQP, '--deqp-caselist-file=TMP', '--deqp-crashhandler=enable'],
+        [DEQP,
+        '--deqp-caselist-file=TMP',
+        '--deqp-crashhandler=enable',
+        '--deqp-watchdog=enable'],
         stdout=OUTPUT, stderr=ERROR)
 
     # Loop over test results
@@ -68,9 +73,14 @@ while n < total:
         # Get status code if present (otherwise assume test crashed)
         rstart = RESULTS.find('<Result StatusCode="', nend)
         if rstart < 0:
-            CRASH.write(name + '\n')
-            CRASH.flush()
-            crashed += 1
+            if RESULTS.find('#terminateTestCaseResult Timeout', nend) > 0:
+                TIMEOUT.write(name + '\n')
+                TIMEOUT.flush()
+                timedout += 1
+            else:
+                CRASH.write(name + '\n')
+                CRASH.flush()
+                crashed += 1
             break
         rstart += 20
         rend = RESULTS.find('">', rstart)
@@ -116,6 +126,8 @@ print('%10s: %6d / %d  -- %6.2f%%' % \
     ('FAIL', failed, total,100.0*failed/float(total)))
 print('%10s: %6d / %d  -- %6.2f%%' % \
     ('CRASH', crashed, total,100.0*crashed/float(total)))
+print('%10s: %6d / %d  -- %6.2f%%' % \
+    ('TIMEOUT', timedout, total,100.0*timedout/float(total)))
 print('%10s: %6d / %d  -- %6.2f%%' % \
     ('WARN', warned, total,100.0*warned/float(total)))
 print('%10s: %6d / %d  -- %6.2f%%' % \

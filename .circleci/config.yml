@@ -92,7 +92,7 @@ jobs:
             mkdir test-dir
             cd test-dir
             ln -s ../VK-GL-CTS/vulkan
-            grep "dEQP-VK\.<< parameters.group >>\." ../vk-default.txt | grep -vxFf ../results/SLOW >TESTS
+            grep "dEQP-VK\.<< parameters.group >>\." ../vk-default.txt >TESTS
             python ../classify.py TESTS
 
 workflows:
