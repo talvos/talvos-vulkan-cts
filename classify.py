@@ -1,3 +1,4 @@
+import io
 import subprocess
 import sys
 
@@ -52,7 +53,7 @@ while n < total:
         stdout=OUTPUT, stderr=ERROR)
 
     # Loop over test results
-    RESULTS = open('TestResults.qpa', 'r').read()
+    RESULTS = io.open('TestResults.qpa', 'r', encoding='latin-1').read()
     pos = 0
     while True:
         # Find start of next test result
@@ -119,7 +120,7 @@ while n < total:
 
     print('%d / %d -- %.2f%%' % (passed, n, 100.0*passed/float(n)))
 
-print()
+print('')
 print('%10s: %6d / %d  -- %6.2f%%' % \
     ('PASS', passed, total,100.0*passed/float(total)))
 print('%10s: %6d / %d  -- %6.2f%%' % \
@@ -132,7 +133,7 @@ print('%10s: %6d / %d  -- %6.2f%%' % \
     ('WARN', warned, total,100.0*warned/float(total)))
 print('%10s: %6d / %d  -- %6.2f%%' % \
     ('NOSUPPORT', nosupport, total,100.0*nosupport/float(total)))
-print()
+print('')
 
 # Dump runtimes for tests that passed
 RUNTIMES = open('RUNTIMES', 'w')
