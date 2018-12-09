@@ -1,0 +1,6 @@
+dEQP-VK.fragment_operations.scissor.lines.inside
+dEQP-VK.fragment_operations.scissor.lines.partially_inside
+dEQP-VK.fragment_operations.scissor.lines.outside
+dEQP-VK.fragment_operations.scissor.lines.crossing
+dEQP-VK.fragment_operations.early_fragment.early_fragment_tests_depth
+dEQP-VK.fragment_operations.early_fragment.early_fragment_tests_depth_no_attachment

@@ -1,0 +1,12 @@
+dEQP-VK.clipping.clip_volume.inside.line_list
+dEQP-VK.clipping.clip_volume.inside.line_list_with_adjacency
+dEQP-VK.clipping.clip_volume.inside.line_strip
+dEQP-VK.clipping.clip_volume.inside.line_strip_with_adjacency
+dEQP-VK.clipping.clip_volume.inside.triangle_list_with_adjacency
+dEQP-VK.clipping.clip_volume.inside.triangle_strip_with_adjacency
+dEQP-VK.clipping.clip_volume.outside.line_list
+dEQP-VK.clipping.clip_volume.outside.line_list_with_adjacency
+dEQP-VK.clipping.clip_volume.outside.line_strip
+dEQP-VK.clipping.clip_volume.outside.line_strip_with_adjacency
+dEQP-VK.clipping.clip_volume.outside.triangle_list_with_adjacency
+dEQP-VK.clipping.clip_volume.outside.triangle_strip_with_adjacency

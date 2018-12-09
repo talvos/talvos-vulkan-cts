@@ -1,0 +1,7 @@
+dEQP-VK.ycbcr.query.size_lod.vertex.r8g8b8a8_unorm
+dEQP-VK.ycbcr.query.size_lod.fragment.r8g8b8a8_unorm
+dEQP-VK.ycbcr.query.size_lod.compute.r8g8b8a8_unorm
+dEQP-VK.ycbcr.query.lod.fragment.r8g8b8a8_unorm
+dEQP-VK.ycbcr.query.levels.vertex.r8g8b8a8_unorm
+dEQP-VK.ycbcr.query.levels.fragment.r8g8b8a8_unorm
+dEQP-VK.ycbcr.query.levels.compute.r8g8b8a8_unorm

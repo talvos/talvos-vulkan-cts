@@ -1,0 +1,4 @@
+dEQP-VK.ssbo.unsized_array_length.float_no_offset_explicit_size
+dEQP-VK.ssbo.unsized_array_length.float_no_offset_whole_size
+dEQP-VK.ssbo.unsized_array_length.float_offset_explicit_size
+dEQP-VK.ssbo.unsized_array_length.float_offset_whole_size

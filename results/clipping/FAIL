@@ -1,0 +1,5 @@
+dEQP-VK.clipping.clip_volume.inside.point_list
+dEQP-VK.clipping.clip_volume.outside.point_list
+dEQP-VK.clipping.clip_volume.outside.triangle_list
+dEQP-VK.clipping.clip_volume.outside.triangle_strip
+dEQP-VK.clipping.clip_volume.outside.triangle_fan

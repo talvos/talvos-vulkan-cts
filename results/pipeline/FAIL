@@ -1,0 +1,11 @@
+dEQP-VK.pipeline.depth.format_features.support_d16_unorm
+dEQP-VK.pipeline.depth.format_features.support_d24_unorm_or_d32_sfloat
+dEQP-VK.pipeline.depth.format_features.support_d24_unorm_s8_uint_or_d32_sfloat_s8_uint
+dEQP-VK.pipeline.spec_constant.graphics.vertex.expression.array_size
+dEQP-VK.pipeline.spec_constant.graphics.vertex.expression.array_size_pass_to_function
+dEQP-VK.pipeline.spec_constant.graphics.fragment.expression.array_size
+dEQP-VK.pipeline.spec_constant.graphics.fragment.expression.array_size_pass_to_function
+dEQP-VK.pipeline.spec_constant.compute.expression.array_size
+dEQP-VK.pipeline.spec_constant.compute.expression.array_size_pass_to_function
+dEQP-VK.pipeline.input_assembly.primitive_restart.index_type_uint16.triangle_strip
+dEQP-VK.pipeline.input_assembly.primitive_restart.index_type_uint32.triangle_strip
