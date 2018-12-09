@@ -77,7 +77,6 @@ jobs:
       group:
         type: string
     steps:
-      - run: echo
       - checkout
       - *install-base-deps
       - attach_workspace:
@@ -94,133 +93,225 @@ jobs:
             grep "dEQP-VK\.<< parameters.group >>\." ../../vk-default.txt >TESTS
             python ../../classify.py TESTS
             git diff --stat
+      - persist_to_workspace:
+          root: .
+          paths:
+            - results/<< parameters.group >>
+
+  collect_results:
+    executor: base-image
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - add_ssh_keys:
+          fingerprints:
+            - "09:05:cc:dd:e4:25:41:d8:1a:34:af:17:4b:bb:ee:6d"
+      - run:
+          name: Check for differences in results
+          command: |
+            if ! git diff-index --quiet HEAD
+            then
+              git config --global user.email "null"
+              git config --global user.name "CircleCI Deployment"
+              git add -u results/
+              git commit -m "CircleCI results"
+              git push -f origin HEAD:circleci-results
+            fi
 
 workflows:
   version: 2.1
   build-and-test:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: master
       - test:
+          name: test-info
           group: info
           requires:
             - build
       - test:
+          name: test-api
           group: api
           requires:
             - build
       - test:
+          name: test-memory
           group: memory
           requires:
             - build
       - test:
+          name: test-pipeline
           group: pipeline
           requires:
             - build
       - test:
+          name: test-binding_model
           group: binding_model
           requires:
             - build
       - test:
+          name: test-spirv_assembly
           group: spirv_assembly
           requires:
             - build
       - test:
+          name: test-glsl
           group: glsl
           requires:
             - build
       - test:
+          name: test-renderpass
           group: renderpass
           requires:
             - build
       - test:
+          name: test-renderpass2
           group: renderpass2
           requires:
             - build
       - test:
+          name: test-ubo
           group: ubo
           requires:
             - build
       - test:
+          name: test-dynamic_state
           group: dynamic_state
           requires:
             - build
       - test:
+          name: test-ssbo
           group: ssbo
           requires:
             - build
       - test:
+          name: test-query_pool
           group: query_pool
           requires:
             - build
       - test:
+          name: test-draw
           group: draw
           requires:
             - build
       - test:
+          name: test-compute
           group: compute
           requires:
             - build
       - test:
+          name: test-image
           group: image
           requires:
             - build
       - test:
+          name: test-wsi
           group: wsi
           requires:
             - build
       - test:
+          name: test-synchronization
           group: synchronization
           requires:
             - build
       - test:
+          name: test-sparse_resources
           group: sparse_resources
           requires:
             - build
       - test:
+          name: test-tessellation
           group: tessellation
           requires:
             - build
       - test:
+          name: test-rasterization
           group: rasterization
           requires:
             - build
       - test:
+          name: test-clipping
           group: clipping
           requires:
             - build
       - test:
+          name: test-fragment_operations
           group: fragment_operations
           requires:
             - build
       - test:
+          name: test-texture
           group: texture
           requires:
             - build
       - test:
+          name: test-geometry
           group: geometry
           requires:
             - build
       - test:
+          name: test-robustness
           group: robustness
           requires:
             - build
       - test:
+          name: test-multiview
           group: multiview
           requires:
             - build
       - test:
+          name: test-subgroups
           group: subgroups
           requires:
             - build
       - test:
+          name: test-ycbcr
           group: ycbcr
           requires:
             - build
       - test:
+          name: test-protected_memory
           group: protected_memory
           requires:
             - build
       - test:
+          name: test-device_group
           group: device_group
           requires:
             - build
+      - collect_results:
+          requires:
+            - test-info
+            - test-api
+            - test-memory
+            - test-pipeline
+            - test-binding_model
+            - test-spirv_assembly
+            - test-glsl
+            - test-renderpass
+            - test-renderpass2
+            - test-ubo
+            - test-dynamic_state
+            - test-ssbo
+            - test-query_pool
+            - test-draw
+            - test-compute
+            - test-image
+            - test-wsi
+            - test-synchronization
+            - test-sparse_resources
+            - test-tessellation
+            - test-rasterization
+            - test-clipping
+            - test-fragment_operations
+            - test-texture
+            - test-geometry
+            - test-robustness
+            - test-multiview
+            - test-subgroups
+            - test-ycbcr
+            - test-protected_memory
+            - test-device_group
