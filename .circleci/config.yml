@@ -89,11 +89,11 @@ jobs:
             export TALVOS_MAX_ERRORS=1
             export LD_LIBRARY_PATH=$PWD/talvos/lib/:$LD_LIBRARY_PATH
             export PATH=$PWD/VK-GL-CTS:$PATH
-            mkdir test-dir
-            cd test-dir
-            ln -s ../VK-GL-CTS/vulkan
-            grep "dEQP-VK\.<< parameters.group >>\." ../vk-default.txt >TESTS
-            python ../classify.py TESTS
+            cd results/<< parameters.group >>
+            ln -s ../../VK-GL-CTS/vulkan
+            grep "dEQP-VK\.<< parameters.group >>\." ../../vk-default.txt >TESTS
+            python ../../classify.py TESTS
+            git diff --stat
 
 workflows:
   version: 2.1
