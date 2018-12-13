@@ -84,6 +84,14 @@ jobs:
       - attach_workspace:
           at: .
       - run:
+          name: "Check for new Talvos commits"
+          command: |
+            if grep -f talvos/COMMIT README.md
+            then
+              echo "No new Talvos commits"
+              circleci step halt
+            fi
+      - run:
           name: Run tests
           no_output_timeout: 2h
           command: |
