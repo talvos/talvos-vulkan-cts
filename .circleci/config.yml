@@ -120,6 +120,7 @@ jobs:
               sed -i '/Results for commit/,$d' README.md
               echo "Results for commit `cat talvos/COMMIT` on `date '+%a %d %b %Y'`" >>README.md
               ./summary.sh >>README.md
+              echo '```' >>README.md
 
               # Sanity check total number of tests
               if ! grep 'Total tests passed.*341615' README.md
