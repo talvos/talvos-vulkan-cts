@@ -116,26 +116,41 @@ jobs:
             set +o pipefail
             if [ -n "`git diff --stat`" ]
             then
-              # Check for regressions
-              git diff results/*/PASS | grep '^-dEQP' | cut -c 2- >REGRESSIONS
-              if [ -s REGRESSIONS ]
-              then
-                echo "`wc -l REGRESSIONS` regressions detected"
-                cat REGRESSIONS
-                exit 1
-              fi
-
               # Regenerate results summary in README
               sed -i '/Results for commit/,$d' README.md
               echo "Results for commit `cat talvos/COMMIT` on `date '+%a %d %b %Y'`" >>README.md
               ./summary.sh >>README.md
 
-              # Push updated results to GitHub
+              # Sanity check total number of tests
+              if ! grep 'Total tests passed.*341615' README.md
+              then
+                echo "Unexpected total number of tests in results summary"
+                exit 1
+              fi
+
+              # Commit updated results
               git config --global user.email "null"
               git config --global user.name "CircleCI Deployment"
               git add -u results/ README.md
-              git commit -m "CircleCI results"
-              git push -f origin HEAD:circleci-results
+              git commit -m "CircleCI results for `cat talvos/COMMIT`"
+
+              # Check for regressions
+              git diff results/*/PASS | grep '^-dEQP' | cut -c 2- >REGRESSIONS
+              if [ -s REGRESSIONS ]
+              then
+                # Dump regressions and push to branch on GitHub
+                echo "`wc -l REGRESSIONS` regressions detected"
+                cat REGRESSIONS
+                git push -f origin HEAD:circleci-regressions
+                exit 1
+              fi
+
+              # Push updated results to GitHub master branch
+              if ! git push origin master
+              then
+                echo "Failed to push results"
+                exit 1
+              fi
             else
               echo "No differences in results"
             fi
