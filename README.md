@@ -4,7 +4,7 @@ long to run for all commits and pull requests in the main Talvos
 repository, so we run it once per day here instead.
 
 ```
-Results for commit dba491f on Thu 13 Dec 2018
+Results for commit XXXXXXX on Thu 13 Dec 2018
 -----------------------------------------------
 api                 :  11380 /  81012 ->  14.0%
 binding_model       :  15795 /  43207 ->  36.6%
