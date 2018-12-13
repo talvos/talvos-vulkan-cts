@@ -53,8 +53,10 @@ jobs:
           name: Build Talvos
           command: |
             git clone https://github.com/talvos/talvos talvos-src
+            mkdir -p talvos
             mkdir -p talvos-src/build
             cd talvos-src/build
+            git log -n 1 --oneline | awk '{print $1}' >../../talvos/COMMIT
             cmake .. \
               -DCMAKE_BUILD_TYPE=Debug \
               -DCMAKE_INSTALL_PREFIX=$PWD/../../talvos \
@@ -123,10 +125,15 @@ jobs:
                 exit 1
               fi
 
+              # Regenerate results summary in README
+              sed -i '/Results for commit/,$d' README.md
+              echo "Results for commit `cat talvos/COMMIT` on `date '+%a %d %b %Y'`" >>README.md
+              ./summary.sh >>README.md
+
               # Push updated results to GitHub
               git config --global user.email "null"
               git config --global user.name "CircleCI Deployment"
-              git add -u results/
+              git add -u results/ README.md
               git commit -m "CircleCI results"
               git push -f origin HEAD:circleci-results
             else
