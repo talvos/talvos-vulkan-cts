@@ -130,27 +130,29 @@ jobs:
               ./summary.sh >>README.md
               echo '```' >>README.md
 
-              # Sanity check total number of tests
-              if ! grep 'Total tests passed.*341615' README.md
-              then
-                echo "Unexpected total number of tests in results summary"
-                exit 1
-              fi
-
               # Commit updated results
               git config --global user.email "null"
               git config --global user.name "CircleCI Deployment"
               git add -u results/ README.md
               git commit -m "CircleCI results for `cat talvos/COMMIT`"
 
+              # Sanity check total number of tests
+              if ! grep 'Total tests passed.*341615' README.md
+              then
+                # Push to branch for manual inspection
+                echo "Unexpected total number of tests in results summary"
+                git push -f origin HEAD:circleci-results
+                exit 1
+              fi
+
               # Check for regressions
-              git diff results/*/PASS | grep '^-dEQP' | cut -c 2- >REGRESSIONS
+              git show results/*/PASS | grep '^-dEQP' | cut -c 2- >REGRESSIONS
               if [ -s REGRESSIONS ]
               then
                 # Dump regressions and push to branch on GitHub
                 echo "`wc -l REGRESSIONS` regressions detected"
                 cat REGRESSIONS
-                git push -f origin HEAD:circleci-regressions
+                git push -f origin HEAD:circleci-results
                 exit 1
               fi
 
