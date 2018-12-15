@@ -86,9 +86,14 @@ jobs:
       - run:
           name: "Check for new Talvos commits"
           command: |
+            git fetch
             if grep -f talvos/COMMIT README.md
             then
               echo "No new Talvos commits"
+              circleci step halt
+            elif git show origin/circleci-results:README.md | grep -f talvos/COMMIT
+            then
+              echo "Results already present for this Talvos commit"
               circleci step halt
             fi
       - run:
