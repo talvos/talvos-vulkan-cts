@@ -3179,8 +3179,6 @@ dEQP-VK.glsl.builtin_var.frontfacing.triangle_list
 dEQP-VK.glsl.builtin_var.frontfacing.triangle_strip
 dEQP-VK.glsl.builtin_var.frontfacing.triangle_fan
 dEQP-VK.glsl.builtin_var.fragcoord_msaa.1_bit
-dEQP-VK.glsl.builtin_var.simple.fragcoord_xyz
-dEQP-VK.glsl.builtin_var.simple.fragcoord_w
 dEQP-VK.glsl.builtin_var.simple.pointcoord
 dEQP-VK.glsl.builtin_var.input_variations.input_builtin
 dEQP-VK.glsl.builtin_var.input_variations.input_builtin_varying
