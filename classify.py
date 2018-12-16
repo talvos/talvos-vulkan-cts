@@ -59,8 +59,8 @@ while n < total:
         # Find start of next test result
         tstart = RESULTS.find('<TestCaseResult', pos)
         if tstart < 0:
-            if n == 0:
-                print('Fatal crash before any tests have run (see ERROR).')
+            if pos == 0:
+                print('Fatal crash (see ERROR).')
                 exit(1)
             break
 
