@@ -155,8 +155,10 @@ jobs:
               if [ -s REGRESSIONS ]
               then
                 # Dump regressions and push to branch on GitHub
+                echo
                 echo "`wc -l REGRESSIONS` regressions detected"
                 cat REGRESSIONS
+                echo
                 git push -f origin HEAD:circleci-results
                 exit 1
               fi
