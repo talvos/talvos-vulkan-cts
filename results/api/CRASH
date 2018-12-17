@@ -22679,8 +22679,10 @@ dEQP-VK.api.granularity.multi.r32g32b32_sfloat
 dEQP-VK.api.granularity.multi.r32g32b32a32_uint
 dEQP-VK.api.granularity.multi.r32g32b32a32_sint
 dEQP-VK.api.granularity.multi.r32g32b32a32_sfloat
-dEQP-VK.api.granularity.random.r32_uint
-dEQP-VK.api.granularity.random.r32g32b32_sint
+dEQP-VK.api.granularity.random.r8_sint
+dEQP-VK.api.granularity.random.r8g8b8a8_sscaled
+dEQP-VK.api.granularity.random.r16_uscaled
+dEQP-VK.api.granularity.random.r16g16b16a16_sscaled
 dEQP-VK.api.granularity.in_render_pass.r8_unorm
 dEQP-VK.api.granularity.in_render_pass.r8_snorm
 dEQP-VK.api.granularity.in_render_pass.r8_uscaled
