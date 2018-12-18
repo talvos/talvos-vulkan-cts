@@ -38,3 +38,4 @@ dEQP-VK.rasterization.interpolation.projected.triangle_strip
 dEQP-VK.rasterization.interpolation.projected.triangle_fan
 dEQP-VK.rasterization.flatshading.triangles
 dEQP-VK.rasterization.flatshading.triangle_strip
+dEQP-VK.rasterization.flatshading.triangle_fan

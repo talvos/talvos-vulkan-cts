@@ -4,7 +4,6 @@ dEQP-VK.compute.basic.write_multiple_unsized_arr_single_invocation
 dEQP-VK.compute.basic.write_multiple_unsized_arr_multiple_groups
 dEQP-VK.compute.basic.image_atomic_op_local_size_1
 dEQP-VK.compute.basic.image_atomic_op_local_size_8
-dEQP-VK.compute.device_group.dispatch_base
 dEQP-VK.compute.device_group.device_index
 dEQP-VK.compute.indirect_dispatch.upload_buffer.single_invocation
 dEQP-VK.compute.indirect_dispatch.upload_buffer.multiple_groups
