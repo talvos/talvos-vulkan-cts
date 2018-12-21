@@ -26,7 +26,7 @@ jobs:
             unzip SPIRV-Tools-master-linux-RelWithDebInfo.zip -d SPIRV-Tools
 
       - restore_cache:
-          key: deqp-vk-ff7282e-v3
+          key: deqp-vk-1.1.2.3
       - run:
           name: Build Vulkan CTS
           command: |
@@ -35,7 +35,7 @@ jobs:
             git clone https://github.com/KhronosGroup/VK-GL-CTS
             mkdir -p VK-GL-CTS/build
             cd VK-GL-CTS/build
-            git checkout ff7282e
+            git checkout vulkan-cts-1.1.2.3
             python ../external/fetch_sources.py
             sed -i 's/libvulkan.so.1/libtalvos-vulkan.so/' \
               ../framework/platform/lnx/tcuLnxVulkanPlatform.cpp
@@ -44,7 +44,7 @@ jobs:
             cp external/vulkancts/modules/vulkan/deqp-vk ..
             mv external/vulkancts/modules/vulkan/vulkan ..
       - save_cache:
-          key: deqp-vk-ff7282e-v3
+          key: deqp-vk-1.1.2.3
           paths:
             - VK-GL-CTS/deqp-vk
             - VK-GL-CTS/vulkan
@@ -343,6 +343,11 @@ workflows:
           group: device_group
           requires:
             - build
+      - test:
+          name: test-memory_model
+          group: memory_model
+          requires:
+            - build
       - collect_results:
           requires:
             - test-info
@@ -376,3 +381,4 @@ workflows:
             - test-ycbcr
             - test-protected_memory
             - test-device_group
+            - test-memory_model
