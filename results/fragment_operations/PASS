@@ -7,3 +7,4 @@ dEQP-VK.fragment_operations.scissor.triangles.outside
 dEQP-VK.fragment_operations.scissor.triangles.crossing
 dEQP-VK.fragment_operations.early_fragment.no_early_fragment_tests_depth
 dEQP-VK.fragment_operations.early_fragment.no_early_fragment_tests_depth_no_attachment
+dEQP-VK.fragment_operations.early_fragment.no_early_fragment_tests_stencil_no_attachment

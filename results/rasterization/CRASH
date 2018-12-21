@@ -1,0 +1,12 @@
+dEQP-VK.rasterization.primitives_multisample_4_bit.triangles
+dEQP-VK.rasterization.primitives_multisample_4_bit.lines
+dEQP-VK.rasterization.primitives_multisample_4_bit.lines_wide
+dEQP-VK.rasterization.primitives_multisample_4_bit.points
+dEQP-VK.rasterization.fill_rules_multisample_4_bit.basic_quad
+dEQP-VK.rasterization.fill_rules_multisample_4_bit.basic_quad_reverse
+dEQP-VK.rasterization.fill_rules_multisample_4_bit.clipped_full
+dEQP-VK.rasterization.fill_rules_multisample_4_bit.clipped_partly
+dEQP-VK.rasterization.fill_rules_multisample_4_bit.projected
+dEQP-VK.rasterization.interpolation_multisample_4_bit.triangles
+dEQP-VK.rasterization.interpolation_multisample_4_bit.lines
+dEQP-VK.rasterization.interpolation_multisample_4_bit.lines_wide

@@ -142,3 +142,9 @@ dEQP-VK.memory.pipeline_barrier.all.1024
 dEQP-VK.memory.pipeline_barrier.all.8192
 dEQP-VK.memory.pipeline_barrier.all.65536
 dEQP-VK.memory.pipeline_barrier.all.1048576
+dEQP-VK.memory.requirements.core.image.regular_tiling_optimal
+dEQP-VK.memory.requirements.core.image.transient_tiling_optimal
+dEQP-VK.memory.requirements.extended.image.regular_tiling_optimal
+dEQP-VK.memory.requirements.extended.image.transient_tiling_optimal
+dEQP-VK.memory.requirements.dedicated_allocation.image.regular_tiling_optimal
+dEQP-VK.memory.requirements.dedicated_allocation.image.transient_tiling_optimal
