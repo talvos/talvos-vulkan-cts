@@ -93,7 +93,7 @@ jobs:
               circleci step halt
             elif git show origin/circleci-results:README.md | grep -f talvos/COMMIT
             then
-              echo "Results already present for this Talvos commit"
+              echo "Pending results already present for this Talvos commit"
               circleci step halt
             fi
       - run:
