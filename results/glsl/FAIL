@@ -28,14 +28,6 @@ dEQP-VK.glsl.operator.common_functions.mod.mediump_vec4_float_vertex
 dEQP-VK.glsl.operator.common_functions.mod.mediump_vec4_float_fragment
 dEQP-VK.glsl.operator.common_functions.mod.highp_vec4_float_vertex
 dEQP-VK.glsl.operator.common_functions.mod.highp_vec4_float_fragment
-dEQP-VK.glsl.builtin.precision.sinh.highp_compute.scalar
-dEQP-VK.glsl.builtin.precision.sinh.highp_compute.vec2
-dEQP-VK.glsl.builtin.precision.sinh.highp_compute.vec3
-dEQP-VK.glsl.builtin.precision.sinh.highp_compute.vec4
-dEQP-VK.glsl.builtin.precision.cosh.highp_compute.scalar
-dEQP-VK.glsl.builtin.precision.cosh.highp_compute.vec2
-dEQP-VK.glsl.builtin.precision.cosh.highp_compute.vec3
-dEQP-VK.glsl.builtin.precision.cosh.highp_compute.vec4
 dEQP-VK.glsl.builtin.precision.mod.mediump_compute.scalar
 dEQP-VK.glsl.builtin.precision.mod.mediump_compute.vec2
 dEQP-VK.glsl.builtin.precision.mod.mediump_compute.vec3

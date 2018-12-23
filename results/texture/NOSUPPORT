@@ -118,10 +118,6 @@ dEQP-VK.texture.filtering.2d.combinations.linear_mipmap_linear.linear.mirror_cla
 dEQP-VK.texture.filtering.2d.combinations.linear_mipmap_linear.linear.mirror_clamp_to_edge.clamp_to_edge
 dEQP-VK.texture.filtering.2d.combinations.linear_mipmap_linear.linear.mirror_clamp_to_edge.clamp_to_border
 dEQP-VK.texture.filtering.2d.combinations.linear_mipmap_linear.linear.mirror_clamp_to_edge.mirror_clamp_to_edge
-dEQP-VK.texture.filtering.unnormal.formats.r4g4b4a4_unorm.nearest
-dEQP-VK.texture.filtering.unnormal.formats.r4g4b4a4_unorm.linear
-dEQP-VK.texture.filtering.unnormal.formats.r5g5b5a1_unorm.nearest
-dEQP-VK.texture.filtering.unnormal.formats.r5g5b5a1_unorm.linear
 dEQP-VK.texture.filtering.cube.formats.r4g4b4a4_unorm.nearest
 dEQP-VK.texture.filtering.cube.formats.r4g4b4a4_unorm.linear
 dEQP-VK.texture.filtering.cube.formats.r4g4b4a4_unorm.nearest_mipmap_nearest

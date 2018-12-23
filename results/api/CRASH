@@ -1,4 +1,3 @@
-dEQP-VK.api.smoke.asm_triangle
 dEQP-VK.api.object_management.single.query_pool
 dEQP-VK.api.object_management.multiple_unique_resources.query_pool
 dEQP-VK.api.object_management.multiple_shared_resources.query_pool

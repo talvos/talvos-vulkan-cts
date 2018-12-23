@@ -1524,10 +1524,6 @@ dEQP-VK.memory.pipeline_barrier.host_write_image_sampled.1024
 dEQP-VK.memory.pipeline_barrier.host_write_image_sampled.8192
 dEQP-VK.memory.pipeline_barrier.host_write_image_sampled.65536
 dEQP-VK.memory.pipeline_barrier.host_write_image_sampled.1048576
-dEQP-VK.memory.pipeline_barrier.all_device.1024
-dEQP-VK.memory.pipeline_barrier.all_device.8192
-dEQP-VK.memory.pipeline_barrier.all_device.65536
-dEQP-VK.memory.pipeline_barrier.all_device.1048576
 dEQP-VK.memory.requirements.core.buffer.regular
 dEQP-VK.memory.requirements.core.image.regular_tiling_linear
 dEQP-VK.memory.requirements.core.image.transient_tiling_linear

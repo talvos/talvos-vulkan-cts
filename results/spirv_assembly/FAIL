@@ -1,5 +1,4 @@
 dEQP-VK.spirv_assembly.instruction.compute.opsmod64.positive
-dEQP-VK.spirv_assembly.instruction.compute.pointer_parameter.workgroup_memory_variable_pointers
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.float
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.vec4
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.matrix

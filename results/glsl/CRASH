@@ -4157,6 +4157,14 @@ dEQP-VK.glsl.builtin.precision.step.highp_compute.scalar
 dEQP-VK.glsl.builtin.precision.step.highp_compute.vec2
 dEQP-VK.glsl.builtin.precision.step.highp_compute.vec3
 dEQP-VK.glsl.builtin.precision.step.highp_compute.vec4
+dEQP-VK.glsl.builtin.precision.smoothstep.mediump_compute.scalar
+dEQP-VK.glsl.builtin.precision.smoothstep.mediump_compute.vec2
+dEQP-VK.glsl.builtin.precision.smoothstep.mediump_compute.vec3
+dEQP-VK.glsl.builtin.precision.smoothstep.mediump_compute.vec4
+dEQP-VK.glsl.builtin.precision.smoothstep.highp_compute.scalar
+dEQP-VK.glsl.builtin.precision.smoothstep.highp_compute.vec2
+dEQP-VK.glsl.builtin.precision.smoothstep.highp_compute.vec3
+dEQP-VK.glsl.builtin.precision.smoothstep.highp_compute.vec4
 dEQP-VK.glsl.builtin.precision.length.mediump_compute.scalar
 dEQP-VK.glsl.builtin.precision.length.mediump_compute.vec2
 dEQP-VK.glsl.builtin.precision.length.mediump_compute.vec3

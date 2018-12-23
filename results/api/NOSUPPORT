@@ -1,3 +1,4 @@
+dEQP-VK.api.driver_properties.properties
 dEQP-VK.api.info.device_group.peer_memory_features
 dEQP-VK.api.device_init.create_device_queue2
 dEQP-VK.api.device_init.create_device_queue2_unmatched_flags

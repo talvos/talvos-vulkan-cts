@@ -2,6 +2,7 @@ dEQP-VK.api.version_check.version
 dEQP-VK.api.smoke.create_sampler
 dEQP-VK.api.smoke.create_shader
 dEQP-VK.api.smoke.triangle
+dEQP-VK.api.smoke.asm_triangle
 dEQP-VK.api.smoke.asm_triangle_no_opname
 dEQP-VK.api.smoke.unused_resolve_attachment
 dEQP-VK.api.info.instance.physical_devices
@@ -14,7 +15,6 @@ dEQP-VK.api.info.device.queue_family_properties
 dEQP-VK.api.info.device.memory_properties
 dEQP-VK.api.info.device.layers
 dEQP-VK.api.info.device.extensions
-dEQP-VK.api.info.device.no_khx_extensions
 dEQP-VK.api.info.format_properties.r4g4_unorm_pack8
 dEQP-VK.api.info.format_properties.r4g4b4a4_unorm_pack16
 dEQP-VK.api.info.format_properties.b4g4r4a4_unorm_pack16
@@ -14571,4 +14571,3 @@ dEQP-VK.api.maintenance3_check.maintenance3_properties
 dEQP-VK.api.descriptor_set.descriptor_set_layout_lifetime.compute
 dEQP-VK.api.descriptor_set.descriptor_set_layout.empty_set.normal
 dEQP-VK.api.pipeline.pipeline_layout.lifetime.compute
-dEQP-VK.api.invariance.random
