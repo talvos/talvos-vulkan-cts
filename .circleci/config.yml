@@ -142,7 +142,8 @@ jobs:
               git commit -m "CircleCI results for `cat talvos/COMMIT`"
 
               # Sanity check total number of tests
-              if ! grep 'Total tests passed.*341615' README.md
+              total_tests=`wc -l vk-default.txt | awk '{print $1}'`
+              if ! grep 'Total tests passed.*'$total_tests README.md
               then
                 # Push to branch for manual inspection
                 echo "Unexpected total number of tests in results summary"
