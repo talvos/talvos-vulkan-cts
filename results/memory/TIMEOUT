@@ -9,5 +9,7 @@ dEQP-VK.memory.pipeline_barrier.host_write_storage_buffer.65536
 dEQP-VK.memory.pipeline_barrier.host_write_storage_buffer.1048576
 dEQP-VK.memory.pipeline_barrier.host_write_storage_texel_buffer.65536
 dEQP-VK.memory.pipeline_barrier.host_write_storage_texel_buffer.1048576
+dEQP-VK.memory.pipeline_barrier.transfer_dst_storage_buffer.65536
 dEQP-VK.memory.pipeline_barrier.transfer_dst_storage_buffer.1048576
+dEQP-VK.memory.pipeline_barrier.transfer_dst_storage_texel_buffer.65536
 dEQP-VK.memory.pipeline_barrier.transfer_dst_storage_texel_buffer.1048576
