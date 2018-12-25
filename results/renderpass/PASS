@@ -108,6 +108,9 @@ dEQP-VK.renderpass.suballocation.formats.r8g8b8a8_sint.load.clear_draw
 dEQP-VK.renderpass.suballocation.formats.r8g8b8a8_sint.dont_care.clear
 dEQP-VK.renderpass.suballocation.formats.r8g8b8a8_sint.dont_care.draw
 dEQP-VK.renderpass.suballocation.formats.r8g8b8a8_sint.dont_care.clear_draw
+dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.clear.clear
+dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.load.clear
+dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.dont_care.clear
 dEQP-VK.renderpass.suballocation.formats.r16_unorm.clear.clear
 dEQP-VK.renderpass.suballocation.formats.r16_unorm.clear.draw
 dEQP-VK.renderpass.suballocation.formats.r16_unorm.clear.clear_draw
@@ -410,6 +413,9 @@ dEQP-VK.renderpass.dedicated_allocation.formats.r8g8b8a8_sint.load.clear_draw
 dEQP-VK.renderpass.dedicated_allocation.formats.r8g8b8a8_sint.dont_care.clear
 dEQP-VK.renderpass.dedicated_allocation.formats.r8g8b8a8_sint.dont_care.draw
 dEQP-VK.renderpass.dedicated_allocation.formats.r8g8b8a8_sint.dont_care.clear_draw
+dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.clear.clear
+dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.load.clear
+dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.dont_care.clear
 dEQP-VK.renderpass.dedicated_allocation.formats.r16_unorm.clear.clear
 dEQP-VK.renderpass.dedicated_allocation.formats.r16_unorm.clear.draw
 dEQP-VK.renderpass.dedicated_allocation.formats.r16_unorm.clear.clear_draw
