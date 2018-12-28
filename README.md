@@ -4,18 +4,18 @@ long to run for all commits and pull requests in the main Talvos
 repository, so we run it once per day here instead.
 
 ```
-Results for commit 7822e3f on Tue 25 Dec 2018
+Results for commit bf1c357 on Fri 28 Dec 2018
 ---------------------------------------------------
 api                     :  15294 /  81011 ->  18.9%
 binding_model           :  15795 /  44782 ->  35.3%
 clipping                :      3 /    166 ->   1.8%
 compute                 :     43 /     68 ->  63.2%
-device_group            :      0 /     12 ->   0.0%
+device_group            :      6 /     12 ->  50.0%
 draw                    :     52 /    395 ->  13.2%
 dynamic_state           :      0 /     15 ->   0.0%
 fragment_operations     :     10 /     35 ->  28.6%
 geometry                :      0 /    136 ->   0.0%
-glsl                    :   9759 /  17427 ->  56.0%
+glsl                    :   9791 /  17427 ->  56.2%
 image                   :   3152 /  15770 ->  20.0%
 info                    :      4 /      4 -> 100.0%
 memory                  :   1585 /   2817 ->  56.3%
@@ -39,13 +39,13 @@ ubo                     :   2567 /   8965 ->  28.6%
 wsi                     :      0 /    455 ->   0.0%
 ycbcr                   :      0 /  20923 ->   0.0%
 ---------------------------------------------------
-Total tests passed      :  59084 / 374087 ->  15.8%
-Total tests failed      :   5395 / 374087 ->   1.4%
-Total tests crashed     :  93870 / 374087 ->  25.1%
+Total tests passed      :  59122 / 374087 ->  15.8%
+Total tests failed      :   5360 / 374087 ->   1.4%
+Total tests crashed     :  93867 / 374087 ->  25.1%
 Total tests timedout    :     15 / 374087 ->   0.0%
 Total tests warned      :     41 / 374087 ->   0.0%
 Total tests unsupported : 215682 / 374087 ->  57.7%
 ---------------------------------------------------
-Supported tests passed  :  59084 / 158405 ->  37.3%
+Supported tests passed  :  59122 / 158405 ->  37.3%
 ---------------------------------------------------
 ```
