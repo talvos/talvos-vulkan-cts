@@ -1430,12 +1430,6 @@ dEQP-VK.renderpass.suballocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.do
 dEQP-VK.renderpass.suballocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.dont_care.self_dep_draw_use_input_aspect
 dEQP-VK.renderpass.suballocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.dont_care.clear_draw_use_input_aspect
 dEQP-VK.renderpass.suballocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.dont_care.self_dep_clear_draw_use_input_aspect
-dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.clear.draw
-dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.clear.clear_draw
-dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.load.draw
-dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.load.clear_draw
-dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.dont_care.draw
-dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.dont_care.clear_draw
 dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.input.clear.store.clear
 dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.input.clear.store.self_dep_clear
 dEQP-VK.renderpass.suballocation.formats.b8g8r8a8_unorm.input.clear.store.draw
@@ -6092,12 +6086,6 @@ dEQP-VK.renderpass.dedicated_allocation.formats.a8b8g8r8_srgb_pack32.input.dont_
 dEQP-VK.renderpass.dedicated_allocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.dont_care.self_dep_draw_use_input_aspect
 dEQP-VK.renderpass.dedicated_allocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.dont_care.clear_draw_use_input_aspect
 dEQP-VK.renderpass.dedicated_allocation.formats.a8b8g8r8_srgb_pack32.input.dont_care.dont_care.self_dep_clear_draw_use_input_aspect
-dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.clear.draw
-dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.clear.clear_draw
-dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.load.draw
-dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.load.clear_draw
-dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.dont_care.draw
-dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.dont_care.clear_draw
 dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.input.clear.store.clear
 dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.input.clear.store.self_dep_clear
 dEQP-VK.renderpass.dedicated_allocation.formats.b8g8r8a8_unorm.input.clear.store.draw

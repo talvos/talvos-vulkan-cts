@@ -126,9 +126,7 @@ dEQP-VK.image.mutable.2d.r16g16_sfloat_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r16g16_sfloat_r8g8b8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d.r16g16_sfloat_r8g8b8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r16g16_sfloat_b8g8r8a8_unorm_clear_copy
-dEQP-VK.image.mutable.2d.r16g16_sfloat_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d.r16g16_sfloat_b8g8r8a8_snorm_clear_copy
-dEQP-VK.image.mutable.2d.r16g16_sfloat_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r16g16_sfloat_b8g8r8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d.r16g16_sfloat_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32_sfloat_r16g16_sfloat_draw_copy
@@ -157,8 +155,6 @@ dEQP-VK.image.mutable.2d.r32_sfloat_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r32_sfloat_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r32_sfloat_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r32_sfloat_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r32_sfloat_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r32_sfloat_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r32_sfloat_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32g32b32a32_uint_r32g32b32a32_sfloat_clear_texture
 dEQP-VK.image.mutable.2d.r32g32b32a32_uint_r32g32b32a32_sfloat_copy_texture
@@ -208,8 +204,6 @@ dEQP-VK.image.mutable.2d.r8g8b8a8_uint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_uint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_uint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_uint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_uint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_uint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_uint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32g32_uint_r16g16b16a16_sfloat_clear_load
 dEQP-VK.image.mutable.2d.r32g32_uint_r16g16b16a16_sfloat_clear_texture
@@ -259,8 +253,6 @@ dEQP-VK.image.mutable.2d.r16g16_uint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r16g16_uint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r16g16_uint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r16g16_uint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r16g16_uint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r16g16_uint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r16g16_uint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32_uint_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d.r32_uint_r32_sfloat_clear_texture
@@ -288,8 +280,6 @@ dEQP-VK.image.mutable.2d.r32_uint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r32_uint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r32_uint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r32_uint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r32_uint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r32_uint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r32_uint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32g32b32a32_sint_r32g32b32a32_sfloat_clear_texture
 dEQP-VK.image.mutable.2d.r32g32b32a32_sint_r32g32b32a32_sfloat_copy_texture
@@ -339,8 +329,6 @@ dEQP-VK.image.mutable.2d.r8g8b8a8_sint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_sint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_sint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_sint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_sint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_sint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_sint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32g32_sint_r16g16b16a16_sfloat_clear_load
 dEQP-VK.image.mutable.2d.r32g32_sint_r16g16b16a16_sfloat_clear_texture
@@ -390,8 +378,6 @@ dEQP-VK.image.mutable.2d.r16g16_sint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r16g16_sint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r16g16_sint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r16g16_sint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r16g16_sint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r16g16_sint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r16g16_sint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r32_sint_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d.r32_sint_r32_sfloat_clear_texture
@@ -419,8 +405,6 @@ dEQP-VK.image.mutable.2d.r32_sint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r32_sint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r32_sint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r32_sint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r32_sint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r32_sint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r32_sint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_r32_sfloat_clear_texture
@@ -448,8 +432,6 @@ dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_unorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_r32_sfloat_clear_texture
@@ -477,8 +459,6 @@ dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_r8g8b8a8_unorm_copy_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_r8g8b8a8_unorm_store_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_r8g8b8a8_unorm_draw_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_snorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_r16g16_sfloat_clear_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_r16g16_sfloat_draw_copy
@@ -527,9 +507,7 @@ dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_b8g8r8a8_unorm_clear_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_b8g8r8a8_snorm_clear_copy
-dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_b8g8r8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d.r8g8b8a8_srgb_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_r16g16_sfloat_draw_copy
@@ -562,7 +540,6 @@ dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_unorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_r32_sfloat_clear_texture
@@ -594,7 +571,6 @@ dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_snorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_r16g16_sfloat_clear_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_r16g16_sfloat_draw_copy
@@ -645,9 +621,7 @@ dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_r8g8b8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_r8g8b8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_b8g8r8a8_unorm_clear_copy
-dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_b8g8r8a8_snorm_clear_copy
-dEQP-VK.image.mutable.2d.b8g8r8a8_srgb_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_sfloat_r32g32b32a32_uint_clear_texture
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_sfloat_r32g32b32a32_uint_copy_texture
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_sfloat_r32g32b32a32_uint_store_texture
@@ -736,9 +710,7 @@ dEQP-VK.image.mutable.2d_array.r16g16_sfloat_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r16g16_sfloat_r8g8b8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d_array.r16g16_sfloat_r8g8b8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r16g16_sfloat_b8g8r8a8_unorm_clear_copy
-dEQP-VK.image.mutable.2d_array.r16g16_sfloat_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r16g16_sfloat_b8g8r8a8_snorm_clear_copy
-dEQP-VK.image.mutable.2d_array.r16g16_sfloat_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r16g16_sfloat_b8g8r8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d_array.r16g16_sfloat_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_sfloat_r16g16_sfloat_draw_copy
@@ -767,8 +739,6 @@ dEQP-VK.image.mutable.2d_array.r32_sfloat_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r32_sfloat_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r32_sfloat_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r32_sfloat_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r32_sfloat_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r32_sfloat_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_sfloat_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_uint_r32g32b32a32_sfloat_clear_texture
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_uint_r32g32b32a32_sfloat_copy_texture
@@ -818,8 +788,6 @@ dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_uint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32g32_uint_r16g16b16a16_sfloat_clear_load
 dEQP-VK.image.mutable.2d_array.r32g32_uint_r16g16b16a16_sfloat_clear_texture
@@ -869,8 +837,6 @@ dEQP-VK.image.mutable.2d_array.r16g16_uint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r16g16_uint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r16g16_uint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r16g16_uint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r16g16_uint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r16g16_uint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r16g16_uint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_uint_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_uint_r32_sfloat_clear_texture
@@ -898,8 +864,6 @@ dEQP-VK.image.mutable.2d_array.r32_uint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r32_uint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r32_uint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r32_uint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r32_uint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r32_uint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_uint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_sint_r32g32b32a32_sfloat_clear_texture
 dEQP-VK.image.mutable.2d_array.r32g32b32a32_sint_r32g32b32a32_sfloat_copy_texture
@@ -949,8 +913,6 @@ dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_sint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32g32_sint_r16g16b16a16_sfloat_clear_load
 dEQP-VK.image.mutable.2d_array.r32g32_sint_r16g16b16a16_sfloat_clear_texture
@@ -1000,8 +962,6 @@ dEQP-VK.image.mutable.2d_array.r16g16_sint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r16g16_sint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r16g16_sint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r16g16_sint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r16g16_sint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r16g16_sint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r16g16_sint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_sint_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_sint_r32_sfloat_clear_texture
@@ -1029,8 +989,6 @@ dEQP-VK.image.mutable.2d_array.r32_sint_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r32_sint_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r32_sint_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r32_sint_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r32_sint_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r32_sint_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r32_sint_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_r32_sfloat_clear_texture
@@ -1058,8 +1016,6 @@ dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_unorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_r32_sfloat_clear_texture
@@ -1087,8 +1043,6 @@ dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_r8g8b8a8_unorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_r8g8b8a8_unorm_store_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_r8g8b8a8_unorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_b8g8r8a8_unorm_draw_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_snorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_r16g16_sfloat_clear_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_r16g16_sfloat_draw_copy
@@ -1137,9 +1091,7 @@ dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_b8g8r8a8_unorm_clear_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_b8g8r8a8_snorm_clear_copy
-dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_b8g8r8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d_array.r8g8b8a8_srgb_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_r16g16_sfloat_draw_copy
@@ -1172,7 +1124,6 @@ dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_unorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_r16g16_sfloat_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_r32_sfloat_clear_texture
@@ -1204,7 +1155,6 @@ dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_r8g8b8a8_snorm_copy_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_r8g8b8a8_snorm_store_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_r8g8b8a8_srgb_draw_copy
-dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_snorm_b8g8r8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_r16g16_sfloat_clear_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_r16g16_sfloat_draw_copy
@@ -1255,9 +1205,7 @@ dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_r8g8b8a8_snorm_draw_texture
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_r8g8b8a8_srgb_clear_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_r8g8b8a8_srgb_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_b8g8r8a8_unorm_clear_copy
-dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_b8g8r8a8_unorm_draw_copy
 dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_b8g8r8a8_snorm_clear_copy
-dEQP-VK.image.mutable.2d_array.b8g8r8a8_srgb_b8g8r8a8_snorm_draw_copy
 dEQP-VK.image.format_reinterpret.1d.r16g16b16a16_uint_r16g16b16a16_sfloat
 dEQP-VK.image.format_reinterpret.1d.r16g16b16a16_sint_r16g16b16a16_sfloat
 dEQP-VK.image.format_reinterpret.1d_array.r16g16b16a16_uint_r16g16b16a16_sfloat
