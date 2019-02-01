@@ -4349,3 +4349,9 @@ dEQP-VK.protected_memory.interaction.ycbcr.g16_b16r16_2plane_420_unorm.compute.y
 dEQP-VK.protected_memory.interaction.ycbcr.g16_b16r16_2plane_420_unorm.compute.ycbcr_2020.itu_narrow.tiling_optimal_cosited_disjoint
 dEQP-VK.protected_memory.interaction.ycbcr.g16_b16r16_2plane_420_unorm.compute.ycbcr_2020.itu_narrow.tiling_optimal_midpoint
 dEQP-VK.protected_memory.interaction.ycbcr.g16_b16r16_2plane_420_unorm.compute.ycbcr_2020.itu_narrow.tiling_optimal_midpoint_disjoint
+dEQP-VK.protected_memory.workgroupstorage.memsize_1
+dEQP-VK.protected_memory.workgroupstorage.memsize_4
+dEQP-VK.protected_memory.workgroupstorage.memsize_5
+dEQP-VK.protected_memory.workgroupstorage.memsize_60
+dEQP-VK.protected_memory.workgroupstorage.memsize_101
+dEQP-VK.protected_memory.workgroupstorage.memsize_503

@@ -431,6 +431,7 @@ dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.1
 dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.5
 dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.7
 dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.8
+dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.10
 dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.11
 dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.12
 dEQP-VK.ssbo.layout.random.16bit.nested_structs_arrays_instance_arrays.13
@@ -537,6 +538,7 @@ dEQP-VK.ssbo.layout.random.16bit.relaxed.21
 dEQP-VK.ssbo.layout.random.16bit.relaxed.22
 dEQP-VK.ssbo.layout.random.16bit.relaxed.23
 dEQP-VK.ssbo.layout.random.16bit.relaxed.24
+dEQP-VK.ssbo.layout.random.16bit.relaxed.26
 dEQP-VK.ssbo.layout.random.16bit.relaxed.27
 dEQP-VK.ssbo.layout.random.16bit.relaxed.28
 dEQP-VK.ssbo.layout.random.16bit.relaxed.29
@@ -557,10 +559,12 @@ dEQP-VK.ssbo.layout.random.16bit.relaxed.45
 dEQP-VK.ssbo.layout.random.16bit.relaxed.46
 dEQP-VK.ssbo.layout.random.16bit.relaxed.47
 dEQP-VK.ssbo.layout.random.16bit.relaxed.48
+dEQP-VK.ssbo.layout.random.16bit.relaxed.49
 dEQP-VK.ssbo.layout.random.16bit.relaxed.50
 dEQP-VK.ssbo.layout.random.16bit.relaxed.51
 dEQP-VK.ssbo.layout.random.16bit.relaxed.52
 dEQP-VK.ssbo.layout.random.16bit.relaxed.54
+dEQP-VK.ssbo.layout.random.16bit.relaxed.55
 dEQP-VK.ssbo.layout.random.16bit.relaxed.56
 dEQP-VK.ssbo.layout.random.16bit.relaxed.58
 dEQP-VK.ssbo.layout.random.16bit.relaxed.59
@@ -573,6 +577,7 @@ dEQP-VK.ssbo.layout.random.16bit.relaxed.67
 dEQP-VK.ssbo.layout.random.16bit.relaxed.69
 dEQP-VK.ssbo.layout.random.16bit.relaxed.70
 dEQP-VK.ssbo.layout.random.16bit.relaxed.72
+dEQP-VK.ssbo.layout.random.16bit.relaxed.73
 dEQP-VK.ssbo.layout.random.16bit.relaxed.75
 dEQP-VK.ssbo.layout.random.16bit.relaxed.76
 dEQP-VK.ssbo.layout.random.16bit.relaxed.77
@@ -752,6 +757,7 @@ dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.10
 dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.11
 dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.12
 dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.13
+dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.14
 dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.15
 dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.16
 dEQP-VK.ssbo.layout.random.8bit.nested_structs_arrays.17
