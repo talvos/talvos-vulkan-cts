@@ -62,6 +62,8 @@ jobs:
               -DCMAKE_INSTALL_PREFIX=$PWD/../../talvos \
               -DCMAKE_C_COMPILER=gcc-7 \
               -DCMAKE_CXX_COMPILER=g++-7 \
+              -DCMAKE_C_FLAGS_DEBUG="-g -O3" \
+              -DCMAKE_CXX_FLAGS_DEBUG="-g -O3" \
               -DSPIRV_INCLUDE_DIR=$PWD/../../SPIRV-Headers/include/ \
               -DSPIRV_TOOLS_INCLUDE_DIR=$PWD/../../SPIRV-Tools/include/ \
               -DSPIRV_TOOLS_LIBRARY_DIR=$PWD/../../SPIRV-Tools/lib/
