@@ -35,15 +35,12 @@ dEQP-VK.rasterization.discard.line_strip.query_pipeline_true
 dEQP-VK.rasterization.discard.point_list.query_pipeline_true
 dEQP-VK.rasterization.interpolation.basic.lines
 dEQP-VK.rasterization.interpolation.basic.line_strip
-dEQP-VK.rasterization.interpolation.basic.lines_wide
 dEQP-VK.rasterization.interpolation.basic.line_strip_wide
 dEQP-VK.rasterization.interpolation.projected.lines
 dEQP-VK.rasterization.interpolation.projected.line_strip
 dEQP-VK.rasterization.interpolation.projected.lines_wide
-dEQP-VK.rasterization.interpolation.projected.line_strip_wide
 dEQP-VK.rasterization.flatshading.lines
 dEQP-VK.rasterization.flatshading.line_strip
-dEQP-VK.rasterization.flatshading.lines_wide
 dEQP-VK.rasterization.flatshading.line_strip_wide
 dEQP-VK.rasterization.primitives_multisample_2_bit.triangles
 dEQP-VK.rasterization.primitives_multisample_2_bit.lines

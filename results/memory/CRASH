@@ -98,17 +98,6 @@ dEQP-VK.memory.mapping.suballocation.random.96
 dEQP-VK.memory.mapping.suballocation.random.97
 dEQP-VK.memory.mapping.suballocation.random.98
 dEQP-VK.memory.mapping.suballocation.random.99
-dEQP-VK.memory.pipeline_barrier.host_write_uniform_texel_buffer.1024
-dEQP-VK.memory.pipeline_barrier.host_write_uniform_texel_buffer.8192
-dEQP-VK.memory.pipeline_barrier.host_write_uniform_texel_buffer.65536
-dEQP-VK.memory.pipeline_barrier.host_write_uniform_texel_buffer.1048576
-dEQP-VK.memory.pipeline_barrier.transfer_dst_uniform_texel_buffer.1024
-dEQP-VK.memory.pipeline_barrier.transfer_dst_uniform_texel_buffer.8192
-dEQP-VK.memory.pipeline_barrier.transfer_dst_uniform_texel_buffer.65536
-dEQP-VK.memory.pipeline_barrier.transfer_dst_uniform_texel_buffer.1048576
-dEQP-VK.memory.pipeline_barrier.all_device.1024
-dEQP-VK.memory.pipeline_barrier.all_device.8192
-dEQP-VK.memory.pipeline_barrier.all_device.65536
 dEQP-VK.memory.requirements.core.image.regular_tiling_optimal
 dEQP-VK.memory.requirements.core.image.transient_tiling_optimal
 dEQP-VK.memory.requirements.extended.image.regular_tiling_optimal
