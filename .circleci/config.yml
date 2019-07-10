@@ -108,6 +108,7 @@ jobs:
             cd results/<< parameters.group >>
             ln -s ../../VK-GL-CTS/vulkan
             grep "dEQP-VK\.<< parameters.group >>\." ../../vk-default.txt >TESTS
+            ulimit -c 0
             python ../../classify.py TESTS
             git diff --stat
       - persist_to_workspace:
