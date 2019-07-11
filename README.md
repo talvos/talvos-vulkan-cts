@@ -4,7 +4,7 @@ long to run for all commits and pull requests in the main Talvos
 repository, so we run it once per day here instead.
 
 ```
-Results for commit 08298c3 on Wed 03 Apr 2019
+Results for commit f2f134e on Thu 11 Jul 2019
 ---------------------------------------------------
 api                     :  22010 /  87914 ->  25.0%
 binding_model           :  16355 /  44782 ->  36.5%
@@ -30,23 +30,23 @@ renderpass              :    622 /  12704 ->   4.9%
 renderpass2             :      0 /  13106 ->   0.0%
 robustness              :    738 /    762 ->  96.9%
 sparse_resources        :      0 /   1636 ->   0.0%
-spirv_assembly          :   3341 /  25542 ->  13.1%
+spirv_assembly          :   3350 /  25542 ->  13.1%
 ssbo                    :   1930 /   3954 ->  48.8%
 subgroups               :      0 /   6053 ->   0.0%
-synchronization         :   1692 /  23409 ->   7.2%
+synchronization         :   1691 /  23409 ->   7.2%
 tessellation            :      0 /    432 ->   0.0%
 texture                 :      0 /   7836 ->   0.0%
 ubo                     :   2568 /   8965 ->  28.6%
 wsi                     :      0 /    471 ->   0.0%
 ycbcr                   :      3 /  20923 ->   0.0%
 ---------------------------------------------------
-Total tests passed      :  69240 / 397991 ->  17.4%
-Total tests failed      :   5972 / 397991 ->   1.5%
+Total tests passed      :  69248 / 397991 ->  17.4%
+Total tests failed      :   5963 / 397991 ->   1.5%
 Total tests crashed     :  92405 / 397991 ->  23.2%
-Total tests timedout    :     17 / 397991 ->   0.0%
+Total tests timedout    :     18 / 397991 ->   0.0%
 Total tests warned      :     41 / 397991 ->   0.0%
 Total tests unsupported : 230316 / 397991 ->  57.9%
 ---------------------------------------------------
-Supported tests passed  :  69240 / 167675 ->  41.3%
+Supported tests passed  :  69248 / 167675 ->  41.3%
 ---------------------------------------------------
 ```

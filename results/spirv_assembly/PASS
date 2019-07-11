@@ -183,6 +183,7 @@ dEQP-VK.spirv_assembly.instruction.compute.opsrem64.positive
 dEQP-VK.spirv_assembly.instruction.compute.opsrem64.all
 dEQP-VK.spirv_assembly.instruction.compute.opsmod.positive
 dEQP-VK.spirv_assembly.instruction.compute.opsmod.all
+dEQP-VK.spirv_assembly.instruction.compute.opsmod64.positive
 dEQP-VK.spirv_assembly.instruction.compute.opsmod64.all
 dEQP-VK.spirv_assembly.instruction.compute.sconvert.int16_to_int32
 dEQP-VK.spirv_assembly.instruction.compute.sconvert.int16_to_int64
@@ -2453,6 +2454,8 @@ dEQP-VK.spirv_assembly.type.scalar.i64.div_vert
 dEQP-VK.spirv_assembly.type.scalar.i64.div_frag
 dEQP-VK.spirv_assembly.type.scalar.i64.rem_vert
 dEQP-VK.spirv_assembly.type.scalar.i64.rem_frag
+dEQP-VK.spirv_assembly.type.scalar.i64.mod_vert
+dEQP-VK.spirv_assembly.type.scalar.i64.mod_frag
 dEQP-VK.spirv_assembly.type.scalar.i64.shift_right_logical_shift64_vert
 dEQP-VK.spirv_assembly.type.scalar.i64.shift_right_logical_shift64_frag
 dEQP-VK.spirv_assembly.type.scalar.i64.shift_right_arithmetic_shift64_vert
@@ -2761,6 +2764,8 @@ dEQP-VK.spirv_assembly.type.vec2.i64.div_vert
 dEQP-VK.spirv_assembly.type.vec2.i64.div_frag
 dEQP-VK.spirv_assembly.type.vec2.i64.rem_vert
 dEQP-VK.spirv_assembly.type.vec2.i64.rem_frag
+dEQP-VK.spirv_assembly.type.vec2.i64.mod_vert
+dEQP-VK.spirv_assembly.type.vec2.i64.mod_frag
 dEQP-VK.spirv_assembly.type.vec2.i64.shift_right_logical_shift64_vert
 dEQP-VK.spirv_assembly.type.vec2.i64.shift_right_logical_shift64_frag
 dEQP-VK.spirv_assembly.type.vec2.i64.shift_right_arithmetic_shift64_vert
@@ -2989,6 +2994,8 @@ dEQP-VK.spirv_assembly.type.vec3.i64.div_vert
 dEQP-VK.spirv_assembly.type.vec3.i64.div_frag
 dEQP-VK.spirv_assembly.type.vec3.i64.rem_vert
 dEQP-VK.spirv_assembly.type.vec3.i64.rem_frag
+dEQP-VK.spirv_assembly.type.vec3.i64.mod_vert
+dEQP-VK.spirv_assembly.type.vec3.i64.mod_frag
 dEQP-VK.spirv_assembly.type.vec3.i64.shift_right_logical_shift64_vert
 dEQP-VK.spirv_assembly.type.vec3.i64.shift_right_logical_shift64_frag
 dEQP-VK.spirv_assembly.type.vec3.i64.shift_right_arithmetic_shift64_vert
@@ -3217,6 +3224,8 @@ dEQP-VK.spirv_assembly.type.vec4.i64.div_vert
 dEQP-VK.spirv_assembly.type.vec4.i64.div_frag
 dEQP-VK.spirv_assembly.type.vec4.i64.rem_vert
 dEQP-VK.spirv_assembly.type.vec4.i64.rem_frag
+dEQP-VK.spirv_assembly.type.vec4.i64.mod_vert
+dEQP-VK.spirv_assembly.type.vec4.i64.mod_frag
 dEQP-VK.spirv_assembly.type.vec4.i64.shift_right_logical_shift64_vert
 dEQP-VK.spirv_assembly.type.vec4.i64.shift_right_logical_shift64_frag
 dEQP-VK.spirv_assembly.type.vec4.i64.shift_right_arithmetic_shift64_vert

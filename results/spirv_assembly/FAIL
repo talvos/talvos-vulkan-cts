@@ -1,14 +1,5 @@
-dEQP-VK.spirv_assembly.instruction.compute.opsmod64.positive
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.float
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.vec4
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.matrix
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.floatarray
 dEQP-VK.spirv_assembly.instruction.graphics.variable_init.output.struct
-dEQP-VK.spirv_assembly.type.scalar.i64.mod_vert
-dEQP-VK.spirv_assembly.type.scalar.i64.mod_frag
-dEQP-VK.spirv_assembly.type.vec2.i64.mod_vert
-dEQP-VK.spirv_assembly.type.vec2.i64.mod_frag
-dEQP-VK.spirv_assembly.type.vec3.i64.mod_vert
-dEQP-VK.spirv_assembly.type.vec3.i64.mod_frag
-dEQP-VK.spirv_assembly.type.vec4.i64.mod_vert
-dEQP-VK.spirv_assembly.type.vec4.i64.mod_frag
